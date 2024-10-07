@@ -13,10 +13,10 @@ void error(char* msg){
 }
 
 
-int main(int argc, int argv[]){
+int main(int argc, char* argv[]){
     int sockfd, portno, n;
     struct sockaddr_in serv_addr;
-    struct hostnet *server;//this is a pointer to a structure 
+    struct hostent *server;//this is a pointer to a structure 
     char buffer[255];
 
     if(argc < 3){
