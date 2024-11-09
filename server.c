@@ -41,7 +41,7 @@ int main(int argc, char* argv[]){
     serv_addr.sin_port = htons(portno);
 
     //binding the socket with some ip address and a port no
-    if(bind(sockfd, (struct sockaddr_in*) &serv_addr, sizeof(serv_addr)) < 0){
+    if(bind(sockfd, (struct sockaddr*) &serv_addr, sizeof(serv_addr)) < 0){
         error("some error occured in binding the socket");
     }
 
