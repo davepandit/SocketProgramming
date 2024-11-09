@@ -47,7 +47,7 @@ int main(int argc, char* argv[]){
         n = write(sockfd, buffer, strlen(buffer));
 
         n = read(sockfd, buffer, 255);
-        printf(buffer);
+        printf("Buffer is:%s", buffer);
 
         int i = strncmp("Bye", buffer, 3)
 
