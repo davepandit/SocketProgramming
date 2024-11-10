@@ -69,7 +69,7 @@ int main(int argc, char* argv[]){
         if(n < 0){
             error("there is some error in reading");
         }
-        printf("Buffer is:", buffer);
+        printf("Buffer is:%s", buffer);
 
         //again clear the buffer
         bzero(buffer, 255);
